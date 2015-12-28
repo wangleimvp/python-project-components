@@ -37,9 +37,9 @@
 </pre>
 
 6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型：
-list(java.util.ArrayList)：
-set(java.util.HashSet)：
-map（java.util.HashMap）：
+list(java.util.ArrayList)
+set(java.util.HashSet)
+map（java.util.HashMap)
 
 7. 用法如下：
 <pre>
@@ -65,7 +65,7 @@ map（java.util.HashMap）：
     struct Node {
         1: i32 uid,
         2: string name,
-        3: list<subNode> subNodes
+        3: list 《SubNode》 subNodes
     }
     </code>
 </pre>
