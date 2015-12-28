@@ -1,0 +1,11 @@
+#starting options have parameter --runmod default is:development
+development:
+  default:
+    host: 127.0.0.1
+    port: 20880
+
+test:
+  default:
+    host: 127.0.0.1
+    port: 20880
+

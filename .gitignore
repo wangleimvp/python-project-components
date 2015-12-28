@@ -1,0 +1,13 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.grunt
+.idea/
+__pycache__/
+doc/build/
+uploads/
+*.ipr
+*.iml
+*.iws
+*.py[cod]
+**/node_modules
