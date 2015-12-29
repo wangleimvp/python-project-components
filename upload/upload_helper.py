@@ -7,7 +7,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 import datetime
 from tornado.httputil import format_timestamp
-from serviceBO.base_service import ServiceException, ServiceError
+from service_bo.base_service import ServiceException, ServiceError
 from upload_factory import UploadFactory
 from app.services.image_service import ImageService
 

@@ -3,7 +3,7 @@
 from contextlib import contextmanager
 import logging
 from atomiclong import AtomicLong
-from serviceBO.biz_model import BizModel, Attribute
+from service_bo.biz_model import BizModel, Attribute
 
 __author__ = 'freeway'
 

@@ -1,0 +1,26 @@
+#starting options have parameter --runmod default is:development
+development:
+  default:
+    token: null
+    appid: null
+    appsecret: null
+    weixin_num: null
+    has_unionid: null
+    partnerid: null
+    partnerkey: null
+    paysignkey: null
+  web:
+    token: null
+    appid: null
+    appsecret: null
+    weixin_num: null
+    has_unionid: null
+    partnerid: null
+    partnerkey: null
+    paysignkey: null
+  pay:
+    app_id: null
+    mch_id: null
+    notify_url: null
+    key: null
+    app_secret: null

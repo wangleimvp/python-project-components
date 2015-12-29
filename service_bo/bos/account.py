@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from serviceBO.base_service import ReqBO
-from serviceBO.biz_model import BizModel, Attribute
-from serviceBO.validator import Validators, Required, MinLength, MaxLength, Digits, Equals
-from serviceBO.bos import COUNTRY_CODE_ATTRIBUTE, VALIDATION_CODE_ATTRIBUTE, PASSWORD_ATTRIBUTE, \
+from service_bo.base_service import ReqBO
+from service_bo.biz_model import BizModel, Attribute
+from service_bo.validator import Validators, Required, MinLength, MaxLength, Digits, Equals
+from service_bo.bos import COUNTRY_CODE_ATTRIBUTE, VALIDATION_CODE_ATTRIBUTE, PASSWORD_ATTRIBUTE, \
     NEW_MOBILE_ATTRIBUTE, \
     MOBILE_ATTRIBUTE, OLD_PASSWORD_ATTRIBUTE, PASSWORD_VALIDATORS, CAPTCHA_ATTRIBUTE
 

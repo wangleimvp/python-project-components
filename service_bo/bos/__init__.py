@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from serviceBO.biz_model import Attribute
-from serviceBO.validator import Validators, MinLength, MaxLength, Digits, Password, Mobile
-from serviceBO.validator import Required
+from service_bo.biz_model import Attribute
+from service_bo.validator import Validators, MinLength, MaxLength, Digits, Password, Mobile
+from service_bo.validator import Required
 
 __author__ = 'freeway'
 

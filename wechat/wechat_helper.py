@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import logging
-from app.services.bos.weixin import WeixinAppContextBO
-from app.services.wechat_service import WeChatService
-from configs.wechat_builder import WeChatBuilder
+from service_bo.bos.weixin import WeixinAppContextBO
+from service_bo.wechat_service import WeChatService
+from wechat.wechat_builder import WeChatBuilder
 
 __author__ = 'freeway'
 

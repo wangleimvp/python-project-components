@@ -1,0 +1,3 @@
+development:
+  default:
+    url: amqp://127.0.0.1:5672/%2F?connection_attempts=2147483647&heartbeat_interval=5

@@ -8,9 +8,9 @@ Created on 2014-11-07
 import hashlib
 
 from commons import stringutil
-from serviceBO.base_service import BaseService
+from service_bo.base_service import BaseService
 from datebase.account_dao import AccountDao
-from serviceBO.bos.account import AccountBO
+from service_bo.bos.account import AccountBO
 from datebase.database_builder import DatabaseBuilder
 
 __author__ = 'freeway'

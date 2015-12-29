@@ -15,7 +15,7 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 from decorated.base.dict import Dict
 
 from commons import dateutil
-from serviceBO.base_service import ServiceException
+from service_bo.base_service import ServiceException
 
 __author__ = 'huwei'
 

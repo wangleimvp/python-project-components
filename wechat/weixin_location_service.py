@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import logging
-from app.commons.base_service import BaseService
-from app.daos.account_dao import AccountDao
-from app.daos.weixin_account_mapping_dao import WeixinAccountMappingDao
-from app.daos.weixin_location_dao import WeixinLocationDao, WeixinLocation
-from app.services.bos.account import AccountType
-from app.services.bos.weixin import WeixinLocationRspBO
-from configs.database_builder import DatabaseBuilder
-from configs.wechat_builder import WeChatBuilder
+from service_bo.base_service import BaseService
+from datebase.daos.account_dao import AccountDao
+from datebase.daos.weixin_location_dao import WeixinLocationDao, WeixinLocation
+from service_bo.bos.account import AccountType
+from service_bo.bos.weixin import WeixinLocationRspBO
+from datebase.database_builder import DatabaseBuilder
 
 __author__ = 'wanglei'
 

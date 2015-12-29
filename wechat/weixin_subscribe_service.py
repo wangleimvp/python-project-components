@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import logging
-from app.commons.base_service import BaseService
-from app.daos.wexin_subscribe_dao import WeixinSubscribeDao, WeixinSubscribe
-from app.services.bos.common import BoolRespBO
-from configs.database_builder import DatabaseBuilder
+from service_bo.base_service import BaseService
+from datebase.wexin_subscribe_dao import WeixinSubscribeDao, WeixinSubscribe
+from service_bo.common import BoolRespBO
+from datebase.database_builder import DatabaseBuilder
 
 __author__ = 'freeway'
 

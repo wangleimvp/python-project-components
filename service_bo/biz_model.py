@@ -100,7 +100,7 @@ class BizModel(object):
         :return:
         :rtype:
         """
-        from serviceBO.validator import Required
+        from service_bo.validator import Required
 
         errors = DefaultDict()
         for name, attribute in self.class_attributes:

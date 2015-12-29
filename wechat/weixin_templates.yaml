@@ -1,0 +1,102 @@
+# weixin yaml templates
+development:
+  # 签到时通知活动参与者
+  check_in_participant:
+    template_id: 'hr6KFsMiIQSMzUWqyIKJSUSjrBkG6-5ku-y4M4je6Jw'
+    data:
+      first:
+        value: "亲爱的{0}，签到成功" # 活动参与者
+      keyword1:
+        value: "{0}"  # 活动标题
+      keyword2:
+        value: "{0}"  # 签到时间
+      keyword3:
+        value: "{0}"  # 签到地点（用的活动地点）
+      remark:
+        value: "亲爱的{0}，感谢你的到来！"  # 活动参与者
+
+  # 签到时通知活动所属人
+  check_in_party_owner: '{0}在“{1}”进行了签到，已经有{2}人进行了签到'
+
+  # 退出活动时给活动所属人发通知
+  quit_party:
+    template_id: 'pg-pW5r5kHypam8BtKX_Sw9jCtSvf_uVn2rm5_Mt2sk'
+    data:
+      first:
+        value: "你的活动有一位朋友取消了申请"
+      keyword1:
+        value: "{0}"  # 活动主题
+      keyword2:
+        value: "{0}"  # 退出人
+      keyword3:
+        value: "{0}"  # 退出留言
+        color: "#000000"
+
+  # 报名活动时给活动所属人发通知
+  join_party_to_party_owner:
+    template_id: 'YOxqgaP_wzQYgrvNvlkRHpDLheXbGXbZdmZzwRPf-tQ'
+    data:
+      first:
+        value: "你好，你发布的活动有了新的报名"
+      keyword1:
+        value: "{0}"  # 活动标题
+      keyword2:
+        value: "{0}"  # 报名人
+      keyword3:
+        value: "{0}"  # 手机
+      remark:
+        value: "{0}"  # 报名时间：2015年8月8日 等其他信息
+
+  # 报名活动时给活动所属人发通知
+  join_party_to_participant:
+    template_id: 'F_Ko1-vRCAKtYT8xRuleK8_ILr-AydIFnTRyNteyISQ'
+    data:
+      first:
+        value: "你好，你参加的活动报名成功"
+      keyword1:
+        value: "{0}"  # 活动标题
+      keyword2:
+        value: "{0}"  # 活动时间
+      keyword3:
+        value: "{0}"  # 活动地点
+      remark:
+        value: "{0}"  # 备注
+
+  # 活动地点变更
+  change_party_address:
+    template_id: 'UjaSAdkPNCianqeStCfpMsvcDu--sQkzKND4yvZPOB8'
+    data:
+      first:
+        value: "你好，你参加的活动地点已更改"
+      keyword1:
+        value: "{0}"  # 活动名称
+      keyword2:
+        value: "{0}"  # 活动地点
+        color: "#FF0000"
+      remark:
+        value: "请准时参加，点击查看更多详情"
+
+  # 活动时间变更
+  change_party_time:
+    template_id: 'OXQ6DlUKOOzjggc6Tj6YQYPB5D2lQJi3f2xwNrq8xnE'
+    data:
+      first:
+        value: "你好，你参加的活动时间已更改"
+      keyword1:
+        value: "{0}"  # 活动名称
+      keyword2:
+        value: "{0}"  # 活动时间
+        color: "#FF0000"
+      remark:
+        value: "请准时参加，点击查看更多详情"
+
+  # 拒绝报名之后给报名人发送通知
+  reject_participant: '您报名的活动“{0}”，已经被活动组织者拒绝报名了'  # {0}：活动标题
+
+  # 发表评论给发动态的人发送通知
+  add_comment: '{0}对你发表了评论，快去看看吧{1}'
+
+  # 回复评论发送通知
+  reply_comment: '{0}回复了你的评论，快去看看吧{1}'
+
+
