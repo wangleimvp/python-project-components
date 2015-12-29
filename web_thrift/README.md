@@ -2,12 +2,12 @@
 1. 生成thrift gen_py 命令:  
 `thrift -out gen_py --gen py test.thrift`
 2. 基本类型（括号内为对应的Java类型）:  
->bool（boolean）: 布尔类型(TRUE or FALSE)
->byte（byte）: 8位带符号整数
->i16（short）: 16位带符号整数
->i32（int）: 32位带符号整数
->i64（long）: 64位带符号整数
->double（double）: 64位浮点数
+>bool（boolean）: 布尔类型(TRUE or FALSE)  
+>byte（byte）: 8位带符号整数  
+>i16（short）: 16位带符号整数  
+>i32（int）: 32位带符号整数  
+>i64（long）: 64位带符号整数  
+>double（double）: 64位浮点数  
 >string（String）: 采用UTF-8编码的字符串
  
 
@@ -33,9 +33,9 @@ struct定义了一个很普通的OOP对象，但是没有继承特性。
     }
 ```
 
-6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型:
->list(java.util.ArrayList)
->set(java.util.HashSet)
+6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型:  
+>list(java.util.ArrayList)  
+>set(java.util.HashSet)  
 >map（java.util.HashMap)
 
 7. 用法如下:
