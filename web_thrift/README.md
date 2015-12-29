@@ -15,26 +15,22 @@
 
 4. Structs（结构）：
     struct定义了一个很普通的OOP对象，但是没有继承特性。
-    <pre>
-        <code>
+    ```
         struct UserProfile {
             1: i32 uid,
             2: string name,
             3: string blurb
         }
-        </code>
-    </pre>
+    ```
 
 5. 如果变量有默认值，可以直接写在定义文件里:
-<pre>
-    <code>
+    ```
     struct UserProfile {
         1: i32 uid = 1,
         2: string name = "User1",
         3: string blurb
     }
-    </code>
-</pre>
+    ```
 
 6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型：
 list(java.util.ArrayList)
@@ -42,19 +38,18 @@ set(java.util.HashSet)
 map（java.util.HashMap)
 
 7. 用法如下：
-```
-struct Node {
-    1: i32 id,
-    2: string name,
-    3: list<i32> subNodeList,
-    4: map<i32,string> subNodeMap,
-    5: set<i32> subNodeSet
-}
-```
+    ```
+    struct Node {
+        1: i32 id,
+        2: string name,
+        3: list<i32> subNodeList,
+        4: map<i32,string> subNodeMap,
+        5: set<i32> subNodeSet
+    }
+    ```
 
 8. 包含定义的其他Object:
-<pre>
-    <code>
+    ```
     struct SubNode {
         1: i32 uid,
         2: string name,
@@ -65,15 +60,12 @@ struct Node {
         2: string name,
         3: list 《SubNode》 subNodes
     }
-    </code>
-</pre>
+    ```
 
 9. Services服务，也就是对外展现的接口：
-<pre>
-    <code>
+    ```
     service UserStorage {
         void store(1: UserProfile user),
         UserProfile retrieve(1: i32 uid)
     }
-    </code>
-</pre>
+    ```
