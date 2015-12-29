@@ -4,7 +4,6 @@
 .grunt
 .idea/
 __pycache__/
-__init__/
 doc/build/
 uploads/
 *.ipr
