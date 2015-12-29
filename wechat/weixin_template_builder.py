@@ -25,7 +25,3 @@ class WeixinTemplateBuilder(object):
             if weixin_config is not None:
                 cls._templates[name] = weixin_config
         return cls._templates[name]
-
-if __name__ == "__main__":
-
-    check_in_participant_template_message = WeixinTemplateBuilder.get_template_by_name("check_in_participant")

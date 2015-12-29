@@ -17,7 +17,7 @@ class DatabaseSequenceFactory(object):
 
     def __init__(self, database_factory=None, alphabet=None):
         self._default_db = DatabaseBuilder.get_default_db_instance() if database_factory is None else database_factory
-        self.alphabet = "wWBLCMPZbH2GFszTogYu93JNDfIlVmneRx6tkAvKU51r8XOidpchEjQqS7a40y" if alphabet is None else alphabet
+        self.alphabet = "" if alphabet is None else alphabet
 
     def get_id(self, name_space, name):  # 默认为当前项目的name_space 具体项目要修改这个默认值
         sequence_key = "%r:%r" % (name_space, name)
@@ -55,14 +55,3 @@ class DatabaseSequenceFactory(object):
                 raise exc.ArgumentError("sequence is not exist namespace:%r name:%r" % (name_space, name))
             entity = connection.execute(select_sql, name, name_space).first()
             return entity[0], entity[1]
-
-
-if __name__ == "__main__":
-    DatabaseBuilder.run_mode = 'test'
-    for i in range(0, 100000):
-
-        print DatabaseSequenceFactory().get_id('aiwanr','hehe')
-        # print DatabaseSequenceFactory().get_obfuscated_id('aiwanr','users')
-        # print DatabaseSequenceFactory().get_obfuscated_id('aiwanr','users', has_random=True)
-        # print DatabaseSequenceFactory().get_obfuscated_id('aiwanr','users', has_random=True,
-        #                                                   random_length=2, is_prefix=False)
