@@ -34,9 +34,9 @@
     ```
 
 6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型:
-list(java.util.ArrayList)
-set(java.util.HashSet)
-map（java.util.HashMap)
+    list(java.util.ArrayList)
+    set(java.util.HashSet)
+    map（java.util.HashMap)
 
 7. 用法如下:
     ```
