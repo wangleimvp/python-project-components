@@ -1,6 +1,6 @@
-###### Thrift项目命令：
-1. 生成thrift gen_py 命令：thrift -out gen_py --gen py test.thrift
-2. 基本类型（括号内为对应的Java类型）：
+###### Thrift项目命令:
+1. 生成thrift gen_py 命令:thrift -out gen_py --gen py test.thrift
+2. 基本类型（括号内为对应的Java类型）:
     bool（boolean）: 布尔类型(TRUE or FALSE)
     byte（byte）: 8位带符号整数
     i16（short）: 16位带符号整数
@@ -10,10 +10,10 @@
     string（String）: 采用UTF-8编码的字符串
  
 
-3. 特殊类型：
-    binary（ByteBuffer）：未经过编码的字节流
+3. 特殊类型:
+    binary（ByteBuffer）:未经过编码的字节流
 
-4. Structs（结构）：
+4. Structs（结构）:
     struct定义了一个很普通的OOP对象，但是没有继承特性。
     ```
         struct UserProfile {
@@ -32,12 +32,12 @@
     }
     ```
 
-6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型：
+6. 容器，除了上面提到的基本数据类型，Thrift还支持以下容器类型:
 list(java.util.ArrayList)
 set(java.util.HashSet)
 map（java.util.HashMap)
 
-7. 用法如下：
+7. 用法如下:
     ```
     struct Node {
         1: i32 id,
@@ -58,11 +58,11 @@ map（java.util.HashMap)
     struct Node {
         1: i32 uid,
         2: string name,
-        3: list 《SubNode》 subNodes
+        3: list<SubNode> subNodes
     }
     ```
 
-9. Services服务，也就是对外展现的接口：
+9. Services服务，也就是对外展现的接口:
     ```
     service UserStorage {
         void store(1: UserProfile user),
