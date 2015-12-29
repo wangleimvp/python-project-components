@@ -1,5 +1,6 @@
 ###### Thrift项目命令:
-1. 生成thrift gen_py 命令:thrift -out gen_py --gen py test.thrift
+1. 生成thrift gen_py 命令: 
+    thrift -out gen_py --gen py test.thrift
 2. 基本类型（括号内为对应的Java类型）:
     bool（boolean）: 布尔类型(TRUE or FALSE)
     byte（byte）: 8位带符号整数
