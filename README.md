@@ -1,3 +1,11 @@
 ###### Python项目组件
-一、 通用的一些组件  
-二、 thrift远程方法调用模块
+一、 通用util  
+二、 数据库基础支持  
+三、 service基础支持  
+四、 thrift远程方法调用模块  
+五、 memcache应用  
+六、 rabbitMQ应用  
+七、 上传OSS应用  
+八、 Geohash应用  
+九、 websocket应用  
+十、 微信应用  
