@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import functools
-import logging
 import sys
 
 from web_thrift.gen_py.test.ttypes import ThriftException

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from web_thrift.gen_py.test import ThriftTestService
-from web_thrift.thrift_conf.thrift_builder import ThriftBuilder
+from web_thrift.thrift_builder.thrift_builder import ThriftBuilder
 
 __author__ = 'wangshubin'
 

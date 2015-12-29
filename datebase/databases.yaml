@@ -1,0 +1,9 @@
+#starting options have parameter --runmod default is:development
+development:
+  default:
+    url: mysql+mysqldb://root:root@localhost/aiwanr_test?charset=utf8mb4
+    encoding: utf-8
+    echo: False #  if True, the Engine will log all statements
+    echo_pool: False # if True, the connection pool will log all checkouts/checkins to the logging stream
+    pool_size: 5 #  连接池最大连接数
+    pool_recycle: 180 #  连接有效时间

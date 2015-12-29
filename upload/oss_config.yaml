@@ -1,0 +1,11 @@
+#starting options have parameter --runmod default is:development
+development:
+  default:
+    regional_node: oss-cn-beijing.aliyuncs.com
+    id: KhdcgpeQH4TuplJe
+    key: hJqiOPu7g59mGNwXWtZU1r4Fxs5aZK
+    bucket: meicanyun-test
+    download_site: http://meicanyun-test.oss-cn-beijing.aliyuncs.com/
+    download_image_site: http://i1.oi.dev.jvluobo.com/
+    image_prefix: devimg/
+    image_max_length: 8388608 # 单位B 8388608B=8M

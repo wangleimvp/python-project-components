@@ -11,8 +11,8 @@ from thrift.TMultiplexedProcessor import TMultiplexedProcessor
 from tornado.options import define
 
 from web_thrift.gen_py.test import ThriftTestService
-from web_thrift.thrift_conf.thrift_builder import ThriftBuilder
-from web_thrift.thrift_server.party_thrift_handler import ThriftTestHandler
+from web_thrift.thrift_builder.thrift_builder import ThriftBuilder
+from web_thrift.thrift_server.test_thrift_handler import ThriftTestHandler
 
 reload(sys)
 sys.setdefaultencoding('utf8')

@@ -1,0 +1,25 @@
+development:
+  default:
+    servers:
+      - 182.92.82.0:11211
+    behaviors:
+    binary: True
+    username:
+    password:
+    enabled: True
+  captcha:
+    servers:
+      - 182.92.82.0:11211
+    behaviors:
+    binary: True
+    username:
+    password:
+    enabled: True
+  geohash:
+    servers:
+      - 182.92.82.0:11211
+    behaviors:
+    binary: True
+    username:
+    password:
+    enabled: True
