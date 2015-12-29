@@ -61,7 +61,7 @@ class SequenceService(BaseService):
         """
         base_code = list("0123456789abcdefghijklmnopqrstuvwxyz")
         if encryption:
-            base_code = list("prq1x5szdgwcon87v3ya4lbiek2hu69fmt0j")
+            base_code = list("0123456789abcdefghijklmnopqrstuvwxyz")
         result = ""
         while val >= 36:
             result = base_code[val % 36] + result

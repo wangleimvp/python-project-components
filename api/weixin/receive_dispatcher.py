@@ -14,15 +14,27 @@ _COMMON_RESPONSE = u""
 
 
 def text_process(wechat, message):
+    """ 通过微信公众账号接受消息并回复消息
+
+    :param wechat:
+    :param message:
+    :return:
+    """
     return wechat.response_text(_COMMON_RESPONSE)
 
 
 def image_process(wechat, message):
+    """ 通过微信公众账号接受图片并回复消息
+
+    :param wechat:
+    :param message:
+    :return:
+    """
     return wechat.response_text(_COMMON_RESPONSE)
 
 
 def scancode_waitmsg_process(wechat, message):
-    """
+    """ 扫码接口
 
     :param wechat:
     :type wechat:
@@ -31,47 +43,31 @@ def scancode_waitmsg_process(wechat, message):
     :return:
     :rtype:
     """
-    # logging.info(message.__dict__)
-    code_info = message.ScanCodeInfo
-    if code_info:
-        scan_result = code_info[0].get("ScanResult", None)
-        scan_type = code_info[0].get("ScanType", None)
-        if scan_type == 'qrcode':
-            if message.key == 'scancode_checkin':
-                logging.info("ScanResult:{0}".format(scan_result))
-                wechat_notice_service = WeChatNoticeService()
-                check_in_for_weixin_get_req_bo = CheckInForWeiXinGetReqBO()
-                check_in_for_weixin_get_req_bo.app_id = WechatHelper.get_app_id()
-                check_in_for_weixin_get_req_bo.open_id = message.source
-                check_in_for_weixin_get_req_bo.paty_id_checkin_code = scan_result
-                result = wechat_notice_service.check_in_for_weixin(check_in_for_weixin_get_req_bo)
-                return wechat.response_text(result)
     return wechat.response_text(u'code_info not found')
 
 
 def location_process(wechat, message):
-    logging.info("latitude:{0} longitude:{1} precision:{2}".format(message.latitude,
-                                                                   message.longitude,
-                                                                   message.precision))
-    weixin_location_service = WeixinLocationService()
-    weixin_location_req_bo = WeixinLocationReqBO()
-    weixin_location_req_bo.app_id = WechatHelper.get_app_id()
-    weixin_location_req_bo.open_id = message.source
-    weixin_location_req_bo.latitude = message.latitude
-    weixin_location_req_bo.longitude = message.longitude
-    weixin_location_service.save(weixin_location_req_bo)
+    """ 通过公众账号接受用户地理位置
+
+    :param wechat:
+    :param message:
+    :return:
+    """
     return u'success'
 
 
 def location_select_process(wechat, message):
-    location_info = message.SendLocationInfo
-    # if location_info:
-    #     print(location_info)
+    """ 向公众账号发位置
+
+    :param wechat:
+    :param message:
+    :return:
+    """
     return u'success'
 
 
 def subscribe_process(wechat, message):
-    """
+    """ 订阅公众账号
 
     :param wechat:
     :type wechat: wechat_sdk.WechatBasic
@@ -80,28 +76,16 @@ def subscribe_process(wechat, message):
     :return:
     :rtype:
     """
-    weixin_subscribe_service = WeixinSubscribeService()
-    weixin_subscribe_req_bo = WeixinSubscribeReqBO()
-    weixin_subscribe_req_bo.weixin_num = message.target
-    weixin_subscribe_req_bo.open_id = message.source
-    weixin_subscribe_service.subscribe(weixin_subscribe_req_bo)
-    news = []
-    item = {
-        'title': u"",
-        'description': u"",
-        'picurl': "",
-        'url': ""
-    }
-    news.append(item)
-    return wechat.response_news(news)
+    return wechat.response_news("success")
 
 
 def unsubscribe_process(wechat, message):
-    weixin_subscribe_service = WeixinSubscribeService()
-    weixin_subscribe_req_bo = WeixinSubscribeReqBO()
-    weixin_subscribe_req_bo.weixin_num = message.target
-    weixin_subscribe_req_bo.open_id = message.source
-    weixin_subscribe_service.unsubscribe(weixin_subscribe_req_bo)
+    """ 取消关注
+
+    :param wechat:
+    :param message:
+    :return:
+    """
     return u'success'
 
 
