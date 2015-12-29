@@ -42,17 +42,15 @@ set(java.util.HashSet)
 map（java.util.HashMap)
 
 7. 用法如下：
-<pre>
-    <code>
-    struct Node {
-        1: i32 id,
-        2: string name,
-        3: list<i32> subNodeList,
-        4: map<i32,string> subNodeMap,
-        5: set<i32> subNodeSet
-    }
-    </code>
-</pre>
+```
+struct Node {
+    1: i32 id,
+    2: string name,
+    3: list<i32> subNodeList,
+    4: map<i32,string> subNodeMap,
+    5: set<i32> subNodeSet
+}
+```
 
 8. 包含定义的其他Object:
 <pre>
